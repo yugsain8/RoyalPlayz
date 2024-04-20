@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyalPlayz(Home)</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- loaderContent -->
+    <div id="loaderContainer">
+        <div id="displayFlex">
+            <div id="loaderImg">
+                <img id="loaderLogo" src="logo.png" height="100%">
+            </div>
+            <div id="loaderLine">
+                <div id="loaderLine1">
+
+                </div>
+            </div>
+            <div id="loaderText">
+                <p id="loadingText">Loading......</p>
+            </div>
+        </div>
+    </div>
+    <!-- confirmation -->
+    <div id="confirmationContainer">
+        <div id="displayFlex2">
+            <div id="mainConfirmation">
+                <p id="confirmationMsg"></p>
+                <div id="conbtnDiv">
+                    <button id="reject"></button>
+                    <button id="accept"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jumpToTop -->
+    <div id="jumpToTopDiv">
+        <div class="jumpFont"><i class="fa-solid fa-arrow-up" style="color: white;"></i></div>
+    </div>
+    <!-- suggestionContainer -->
+    <div id="suggestionContainer" class="container2">
+        <div id="suggestionInnerContainer" class="innerContainer">
+            <div id="closeSuggestionDiv">
+                <i id="closeSuggestionBtn" class="fa-regular fa-rectangle-xmark closeDiv2"></i>
+            </div>
+            <h2 id="suggestionHeader" class="header2">Suggest a Song/Singer</h2>
+            <!-- <form action="" method="post"> -->
+            <div id="inputDiv">
+                <input type="text" id="suggestionInput" name="suggestion" placeholder="Enter Your Suggestion Here"
+                    maxlength="80">
+                <button id="btnSubmit" class="button">Submit</button>
+            </div>
+            <!-- </form> -->
+            <div>
+                <p id="suggestionDoneTxt" class="submitedTxt">Your suggestion "" has been sumbited successfully</p>
+            </div>
+        </div>
+    </div>
+    <!-- feedbackContainer -->
+    <div id="feedbackContainer" class="container2">
+        <div id="feedbackInnerContainer" class="innerContainer">
+            <div id="closeFeedbackDiv">
+                <i id="closeFeedbacknBtn" class="fa-regular fa-rectangle-xmark closeDiv2"></i>
+            </div>
+            <h2 id="feedbackHeader" class="header2">Drop Your Valuable Feedback</h2>
+            <!-- <form action=""> -->
+            <div id="inputDiv">
+                <textarea name="feedback" id="feedbackInput" cols="80" rows="6" maxlength="1500"
+                    placeholder="Enter Here......."></textarea>
+            </div>
+            <div id="submitDiv">
+                <button class="button" id="resetFeedbackBtn">Reset</button>
+                <button class="button" id="submitFeedbackBtn">Submit</button>
+            </div>
+            <!-- </form> -->
+            <div>
+                <p id="feedbackDoneTxt" class="submitedTxt"></p>
+            </div>
+        </div>
+    </div>
+    <!-- websiteContent -->
+    <div id="fullWebView">
+        <header>
+            <!-- outerHeadForMobileOnly -->
+            <div id="outerHead">
+                <div id="headingDiv">
+                    <img id="mobLogo" src="logo.png" height="100%">
+                    <h1 id="pageHeading">RoyalPlayz</h1>
+                </div>
+            </div>
+            <!-- navBar -->
+            <div id="nav">
+                <!-- brandingForNavBarForPcOnly -->
+                <div id="brandingDiv">
+                    <img id="logo" src="logo.png" height="100%">
+                    <h1 id="headPc">RoyalPlayz</h1>
+                </div>
+                <!-- mainNavContent -->
+                <div id="navOptions">
+                    <!-- option1(Home) -->
+                    <div>
+                        <li class="navOption" id="oHome">
+                            <i id="pcIcons" class="fa-solid fa-house"></i> Home
+                        </li>
+                    </div>
+
+                    <!-- option2(Your Favourites) -->
+                    <!-- <div>
+                        <li class="navOption" id="oFavourites">
+                            <i id="pcIcons" class="fa-solid fa-heart"></i> Your Favourites 
+                        </li>
+                    </div> -->
+
+                    <!-- option3(Playlists) -->
+                    <div>
+                        <li class="navOption" id="oPlaylists">
+                            <i id="pcIcons" class="fa-solid fa-list"></i> Playlists <i id="arrow1"
+                                class="dropdownArrow fa-solid fa-caret-down"></i>
+                        </li>
+                        <!-- dropdown1 -->
+                        <div class="dropdown" id="dropdownPlaylists">
+                            <div class="dropdownOptions">
+                                <div class="playlistIndex">
+                                    <div><img id="plusImg" src="plus.png" height="100%"></div>
+                                    <div class="playlistDropdownNameIndex">
+                                        <p class="playlistNameIndex">Create New Playlist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- option4(Contact) -->
+                    <div>
+                        <li class="navOption" id="oContact">
+                            <i class="fa-solid fa-link"></i> Links <i id="arrow3"
+                                class="dropdownArrow fa-solid fa-caret-down"></i>
+                        </li>
+                        <!-- dropdown2 -->
+                        <div class="dropdown" id="dropdownContact">
+                            <li class="dropdownOptions">
+                                <a class="links" href="tel:+918955593780"><i class="fa-solid fa-phone"></i> Phone </a>
+                            </li>
+                            <li class="dropdownOptions">
+                                <a class="links" href="https://www.instagram.com/yugsain8" target="_main"> <i
+                                        class="fa-brands fa-instagram"></i> Instagram </a>
+                            </li>
+                            <li class="dropdownOptions">
+                                <a class="links" href="https://www.linkedin.com/in/yug-sain-3290182b1/" target="_main">
+                                    <i class="fa-brands fa-linkedin"></i> Linked-In </a>
+                            </li>
+                            <li class="dropdownOptions">
+                                <a class="links" href="https://www.facebook.com/profile.php?id=100094353364166"
+                                    target="_main"> <i class="fa-brands fa-facebook"></i> Facebook </a>
+                            </li>
+                            <li class="dropdownOptions">
+                                <a class="links" href="https://wa.me/+918955593780" target="_main"> <i
+                                        class="fa-brands fa-whatsapp"></i> Whatsapp </a>
+                            </li>
+                            <li class="dropdownOptions">
+                                <a class="links" href="https://www.snapchat.com/add/yugsain8" target="_main"> <i
+                                        class="fa-brands fa-snapchat"></i> Snapchat </a>
+                            </li>
+                            <li class="dropdownOptions">
+                                <a class="links" href="https://t.me/yugsain8" target="_main"> <i
+                                        class="fa-brands fa-telegram"></i>
+                                    Telegram </a>
+                            </li>
+                            <!-- <li><a class="links" href="">X </a><li> -->
+                        </div>
+                    </div>
+
+                    <!-- option5(More) -->
+                    <div>
+                        <li class="navOption" id="oMore">
+                            <i id="pcIcons" class="fa-solid fa-ellipsis-vertical"></i> More <i id="arrow2"
+                                class="dropdownArrow fa-solid fa-caret-down"></i>
+                        </li>
+                        <!-- dropdown3 -->
+                        <div class="dropdown" id="dropdownMore">
+                            <li class="dropdownOptions" id="jumpToFooter">
+                                <i class="fa-solid fa-arrow-down"></i> Jump to Footer(Bottom)
+                            </li>
+                            <!-- <li class="dropdownOptions" id="share">
+                                <i class="fa-solid fa-share-nodes"></i> Share
+                            </li> -->
+                            <li class="dropdownOptions" id="suggestSong">
+                                <i class="fa-solid fa-square-plus"></i> Suggest a Song/Singer
+                            </li>
+                            <li class="dropdownOptions" id="feedback">
+                                <i class="fa-solid fa-comment"></i> Feedback
+                            </li>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <div id="searchBarContainer">
+                <i id="searchBarIcon" class="fa-solid fa-magnifying-glass"></i>
+                <input id="searchBar" placeholder="Search Your Song/Singer Here" type="text">
+                <select name="type" id="typeSelect">
+                    <option value="songs">Songs</option>
+                    <option value="artists">Artists</option>
+                    <option value="playlists">Playlists</option>
+                </select>
+            </div>
+
+            <!-- songsContainer (start) -->
+            <div id="container">
+                <div id="allSongList">
+                </div>
+            </div>
+            <!-- songsContainer (end) -->
+
+            <!-- artistsContainer (start) -->
+            <div id="artistsContainer">
+
+                <div class="artistCard">
+                    <div class="artistPoster"><img class="imgPoster" src="logo.png" height="100%"></div>
+
+                    <div class="artistInfoText">
+                        <p class="artistName">Artist 1</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- artistsContainer (end) -->
+
+            <!-- playlistsContainer (start) -->
+            <div id="playlistsContainer">
+
+                <div class="playlistCard">
+                    <div class="playlistPoster"><img class="imgPoster" src="logo.png" height="100%"></div>
+
+                    <div class="playlistInfoText">
+                        <p class="playlistName">Playlist 1</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- playlistsContainer (end) -->
+        </main>
+
+        <!--bottom(start)-->
+        <div id="bottom">
+            <div id="closeBottom">
+                <p id="closeBottomP"><i id="closeBottomI" class="fa-regular fa-square-caret-down"></i></p>
+            </div>
+            <div id="currentInfoDiv">
+                <div id="songNameDiv">
+                    <p id="songNameDisplay"></p>
+                </div>
+            </div>
+            <div id="div2">
+                <div class="timeDisplay">
+                    <p id="currentTimeDisplay" class="timeP">00:00</p>
+                </div>
+                <div id="allIcons">
+                    <div><i id="backward" class="fa-solid fa-backward-fast"></i></div>
+                    <div><i id="previous" class="fa-solid fa-backward-step"></i></div>
+                    <div><i id="pause" class="fa-solid fa-play"></i>
+                        <div id="loader"></div>
+                    </div>
+                    <div><i id="next" class="fa-solid fa-forward-step"></i></div>
+                    <div><i id="forward" class="fa-solid fa-forward-fast"></i></div>
+                </div>
+                <div class="timeDisplay">
+                    <p id="totalTimeDisplay" class="timeP">00:00</p>
+                </div>
+            </div>
+            <div>
+                <input id="progressBar" type="range" name="range" min="1" value="0" step="1" max="1000">
+            </div>
+        </div>
+        <!--bottom (end)-->
+
+        <footer>
+            <p class="adjustable-text footerTxt">❤️ DEVELOPED WITH LOVE BY YUG SAIN ❤️</p>
+            <p class="adjustable-text footerTxt"> &copy; ALL COPYRIGHT RESERVED @RoyalPlayz</p>
+
+            <div id="msgDiv">
+                <p id="msgFooter" class="footerTxt">
+                    Message from the developer -
+                    <br>
+                    "This is a small song streaming platform that I made as a learning project, I know it can't compete
+                    with the bigger platforms but it's just the beginning and I will make sure I give my 110% whenever I
+                    code and I will learn all the remaining skills because I have fallen in love with coding, I know
+                    it's not an easy task but I'm ready to work harder than required and if you opened this page it
+                    means you value me and I really thank you for that from the bottom of my heart."
+                </p>
+            </div>
+            <div>
+                <p id="bestUserExpTxt"></p>
+            </div>
+        </footer>
+
+    </div>
+    <!-- JS file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
